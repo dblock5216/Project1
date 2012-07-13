@@ -1,0 +1,55 @@
+<!doctype html>
+/*Dorian Lane
+/*VFW 0612
+/*30 June 2012
+<html>
+	<head>
+		<!-- Character Set Meta -->
+		<meta name="charset"  content="utf-8" />
+		<meta name="keyword"  content="smoke, quit, help" />
+		<meta name="description"  content="Cigarette Counter is an application aimed at helping cigarette smokers track the number of cigarettes smoked."  />
+		<meta name="robots"   content="index, follow"       />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"     />
+		<!--Document Title-->
+		<title>Cigarette Counter</title>
+			
+		
+	
+	</head>
+	<body>
+	
+	 <h1>Cigarette Counter</h1>
+		
+			<form>
+		  <fieldset>
+		  <legend><b>Let's Smoke A Cigarette!!</b></legend>
+			<label for="TimeofDay">Time of Day:</label> <br />
+			<select name="Time of Day" id="TimeofDay">
+			Morning <option value="Morning"></option>
+			Noon <option value="Noon" selected="selected"></option>
+			Night <option value="Night"></option>
+			</select>
+			<br />
+			<br />
+			<label for="Date">Date:</label> <input type="date" name="Date" id="Date" /> <br />
+			<br />
+			<label for="HowFarIsTheClosestPersonToYou">How Far Is The Closest Person To You?</label> <br />
+			<input type="range" min="1 ft." max="30 ft." value="Right Beside Me!!!" id="HowFarIsTheClosestPersonToYou"/><br />
+			<br />
+			<label for="AreTheirChildrenAroundYou">Are Their Children Around You?</label> <br/> 
+			<input type="radio" name="Yes" value="Yes" id="AreTheirChildrenAroundYou" /> <br />
+			<input type="radio" name="No" value="No" id="AreTheirChildrenAroundYou" /> <br />
+			<br />
+			<label for="ReasonForSmoking">Reason For Smoking:</label> <br />
+			<textarea rows="10" cols="30" id="ReasonForSmoking"></textarea>
+			<br />
+			<br />
+			<label for="Submit"><big>Smoke That Cigarette</big></label>
+			<input type="submit" value="Smoke" />
+			<input type="hidden" name="Language" value="English" />
+		</fieldset>
+		</form>
+		<br />
+		<a href="#"> Clear Stored Data </a> &nbsp <a href="#"> Display Data </a>
+	</body>
+</html>
