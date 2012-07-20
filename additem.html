@@ -1,0 +1,49 @@
+<!doctype html>
+/*Dorian Lane
+/*VFW 0612
+/*30 June 2012
+<html>
+	<head>
+		<!-- Character Set Meta -->
+		<meta charset="utf-8" >
+		<title>Cigarette Counter</title>
+		<meta name="keyword"  content="smoke, quit, help" />
+		<meta name="description"  content="Cigarette Counter is an application aimed at helping cigarette smokers track the number of cigarettes smoked."  />
+		<meta name="robots"   content="index, follow"       />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"     />
+		<LINK REL=StyleSheet HREF="css/form.css" TYPE="text/css">
+	
+	</head>
+	<body>
+		<h1>Cigarette Counter</h1>
+	 
+	 	
+		<form id="myContent">
+		  		<fieldset>
+		  			<ul id="errors"></ul>
+		  			<ol id="formfield">
+		  					<br />
+						<li><label for="TimeofDay" id="select" name="TimeofDay" id="TimeofDay"></label>
+							
+						<li><label for="Date">Date:</label> <input type="date" name="Date" id="Date" /> 
+							
+						<li><label for="HowFarIsTheClosestPersonToYou">How Far Is The Closest Person To You?</label>
+							<input type="range" min="1 ft." max="30 ft." value="Right Beside Me!!!" id="HowFarIsTheClosestPersonToYou"/>
+							
+						<li><label for="AreTheirChildrenAroundYou" id="AreTheirChildrenAroundYou">Are Their Children Around You?</label>  <br />
+							<input type="radio" name="AreTheirChildrenAroundYou" id="AreTheirChildrenAroundYou" />Yes<br />
+							<input type="radio" name="AreTheirChildrenAroundYou" id="AreTheirChildrenAroundYou" />No<br />
+							
+						<li><label for="ReasonForSmoking">Reason For Smoking:</label> 
+							<textarea rows="10" cols="30" name="ReasonForSmoking" id="ReasonForSmoking"></textarea>
+							
+						<li><label for="Submit"></label>
+							<input type="Submit" value="Smoke" id="Submit" name="Submit" button type="button" />
+							<input type="hidden" name="Language" value="English" />
+				</fieldset>
+		</form>
+		
+		<a href="#" id="clear"> Clear Stored Data </a> &nbsp <a href="#" id="datadisplay"> Display Data </a>
+		<script type="text/javascript" src="javascript/htmljs.js"></script>
+	</body>
+</html>
