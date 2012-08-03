@@ -1,0 +1,52 @@
+<!doctype html>
+<!-- Dorian Lane -->
+<!-- VFW 0612 -->
+<!-- July 2012 -->
+<html>
+	<head>
+		<!-- Character Set Meta -->
+		<meta charset="utf-8" >
+		<meta name="keywords"  content="smoke, quit, help" />
+		<meta name="description"  content="Cigarette Counter is an application aimed at helping cigarette smokers track the number of cigarettes smoked."  />
+		<meta name="robots"   content="index, follow"       />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"     />
+		<title>Baby Bottle Counter</title>	
+	</head>
+	<body>
+		<h1>Baby Bottle Counter</h1>
+	 
+	 	
+		<form id="myContent">
+		  		<fieldset>
+		  			<legend>Bottle Info:</legend>
+		  			<ol id="formfield">
+						<li><label for="TimeofDay">Time Of Day</label>
+							<select name="TimeofDay" id="TimeofDay">
+								<option value="1"> Morning </option>
+								<option value="2"> Noon </option>
+								<option value="3"> Night </option>
+							</select>
+					
+						<li><label for="Date">Date:</label> <input type="date" name="Date" id="Date" /> 
+							
+						<li><label for="HowManyOunces">Ounces</label>
+							<input type="range" min="1" max="16" id="HowManyOunces" />
+							
+						<li><label for="IsItBreastmilk">Is It Breast milk?</label> 
+					
+						<li>Yes<input type="radio" id="IsItBreastmilk" />
+						<li>No<input type="radio" id="IsItBreastmilk" />
+					
+						<li><label for="BabyBehavior">How is the baby's behavior?:</label> 
+							<textarea rows="10" cols="30" name="BabyBehavior" id="BabyBehavior"></textarea>
+							
+						<li><label for="Submit"></label>
+							<input type="Submit" value="Add Bottle" id="Submit" name="Submit" />
+							<input type="hidden" name="Language" value="English" />
+					</ol>
+				</fieldset>
+		</form>
+		
+		<a href="#" id="clear"> Clear Stored Data </a> &amp; <a href="#" id="datadisplay"> Display Data </a>
+	</body>
+</html>
