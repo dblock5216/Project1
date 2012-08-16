@@ -20,29 +20,34 @@
 		<form id="myContent">
 		  		<fieldset>
 		  			<legend>
-		  			<ol id="formfield">
-						<li id="select"><label for="TimeofDay">Time Of Day</label>	
+		  			<ul style="list-style: none;" id="errors"></ul>
+		  			<ul style="list-style: none;" id="formfield">
+						<li id="select"><label for="TimeofDay">Time Of Day</label></li>
 					
-						<li><label for="Date">Date:</label> <input type="date" name="Date" id="Date" /> 
+						<li><label for="Date">Date:</label> <input type="date" name="Date" id="Date"></li> 
 							
-						<li><label for="HowManyOunces">Ounces:</label>
+						<li><label for="HowManyOunces">Ounces:</label></li>
 							<input type="range" min="1" max="16" id="HowManyOunces" />
 							
-						<li><label for="IsItBreastmilk">Is It Breast milk?</label> 
+						<li><label for="IsItBreastmilk">Is It Breast milk?</label></li>
 					
-						<li>Yes:<input type="radio" id="Yes" name="milk" />
-						<li>No:<input type="radio" id="No" name="milk" />
+						<li><input type="radio" id="Yes" name="milk" value="Yes" />Yes:<label for="IsItBreastmilk"></label></li>
+						<li><input type="radio" id="No"  name="milk" value="No" />No:<label for="IsItBreastmilk"></label></li> 
 					
-						<li><label for="Notes">Notes:</label> 
+						<li><label for="Notes">Notes:</label></li>
 							<textarea rows="10" cols="30" name="Notes" id="Notes"></textarea>
 							
-						<li><label for="Submit"></label>
+						<li><label for="Submit"></label></li>
 							<input type="Submit" value="Add Bottle" id="Submit" name="Submit" />
-					</ol>
+					</ul>
 				</legend>
 			</fieldset>
 		</form>
-		<a href="#" id="clear"> Clear Stored Data </a> <br/> <a href="#" id="displaylink"> Display Data </a> <br/> <a href="newproject1vfw.html" id="addnew" value="none" name="Language" value="English" </a>
+		<ul style="list-style: none;">
+		<a href="#" id="clear"> Clear Stored Data </a> &nbsp;
+	 	<a href="#" id="displaylink"> Display Data </a> &nbsp;
+		<a href="newproject1vfw.html" id="addnew" input type="hidden"> Add New Bottle </a>
+		<ul>
 		<script type="text/javascript" src="javascript/new.js"></script>	
 	</body>
 </html>
