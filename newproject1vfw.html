@@ -20,7 +20,7 @@
 		<form id="myContent">
 		  		<fieldset>
 		  			<legend>
-		  			<ul style="list-style: none;" id="errors"></ul>
+		  			<ul id="errors"></ul>
 		  			<ul style="list-style: none;" id="formfield">
 						<li id="select"><label for="TimeofDay">Time Of Day</label></li>
 					
@@ -29,10 +29,10 @@
 						<li><label for="HowManyOunces">Ounces:</label></li>
 							<input type="range" min="1" max="16" id="HowManyOunces" />
 							
-						<li><label for="IsItBreastmilk">Is It Breast milk?</label></li>
+						<li><label for="IsItBreastmilk id="IsItBreastmilk"">Is It Breast milk?</label></li>
 					
-						<li><input type="radio" id="Yes" name="milk" value="Yes" />Yes:<label for="IsItBreastmilk"></label></li>
-						<li><input type="radio" id="No"  name="milk" value="No" />No:<label for="IsItBreastmilk"></label></li> 
+							<input type="radio" id="Yes" name="milk" value="Yes" />Yes<label for="IsItBreastmilk"></label></li>
+							<input type="radio" id="No"  name="milk" value="No" />No<label for="IsItBreastmilk"></label></li> 
 					
 						<li><label for="Notes">Notes:</label></li>
 							<textarea rows="10" cols="30" name="Notes" id="Notes"></textarea>
@@ -48,6 +48,7 @@
 	 	<a href="#" id="displaylink"> Display Data </a> &nbsp;
 		<a href="newproject1vfw.html" id="addnew" input type="hidden"> Add New Bottle </a>
 		<ul>
+		<script type="text/javascript" src="javascript/json.js"></script>
 		<script type="text/javascript" src="javascript/new.js"></script>	
 	</body>
 </html>

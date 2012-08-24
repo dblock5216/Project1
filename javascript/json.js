@@ -1,31 +1,16 @@
-// Dorian LAne	
-// VFW 0712
-// July 26th, 2012
-//
-
-var json  = {
-	"cigarette1": {
-		"group": ["Group", "Smoked"],
-		"tday":	["Time of Day", "Noon"],
-		"date": ["Date", "10/24/2011"],
-		"distance": ["Distance", "50"],
-		"childvalue": ["Children", "Yes"],
-		"reason": ["Reason", "bored"],
+var json = {
+	"bottle1": {
+		"timeofday": ["Time of Day: ", "Morning"],
+		"date": ["Date: ", "12-06-2012"],
+		"ounces": ["Ounces of Milk: ", "8"],
+		"milk": ["Is It Breastmilk?: ", "Yes"],
+		"notes": ["Notes: ", "None"]
 	},
-	"cigarette2": {
-		"group": ["Group", "Smoked"],
-		"tday":	["Time of Day", "Morning"],
-		"date": ["Date", "1/31/2011"],
-		"distance": ["Distance", "20"],
-		"childvalue": ["Children", "No"],
-		"reason": ["Reason", "tired"],	
-	},
-	"cigarette3": {
-		"group": ["Group", "Smoked"],
-		"tday":	["Time of Day", "Night"],
-		"date": ["Date", "9/4/2011"],
-		"distance": ["Distance", "10"],
-		"childvalue": ["Children", "Yes"],
-		"reason": ["Reason", "on way to work"],	
+	 "bottle2": {
+		"timeofday": ["Time of Day: ", "Night"],
+		"date": ["Date: ", "22-01-2012"],
+		"ounces": ["Ounces of Milk: ", "12"],
+		"milk": ["Is It Breastmilk?: ", "No"],
+		"notes": ["Notes: ", "Baby only drank half bottle."]
 	}
-};
+}

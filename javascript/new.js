@@ -27,10 +27,9 @@ window.addEventListener("DOMContentLoaded", function() {
 	
 	function getSelectedRadio() {
 		var radios = document.forms[0].milk;
-		for (var i = 0; i < radios.length; i++) {
-			if (radios[i].checked) {
+		for(var i = 0; i < radios.length; i++) {	
+			if(radios[i].checked) {
 				milkvalue = radios[i].value;
-				milkvalue
 			}
 		}	
 	}
@@ -66,16 +65,24 @@ window.addEventListener("DOMContentLoaded", function() {
 			item.timeofday = ["Time of Day:", $("TimeofDay").value];
 			item.date	 = ["Date:", $("Date").value];
 			item.ounces  = ["How Many Ounces:", $("HowManyOunces").value];
-			//item.milk    = ["Is It Breastmilk?", milkvalue];
+			item.milk    = ["Is It Breastmilk?", milkvalue];
 			item.notes  = ["Notes:", $("Notes").value];
 		localStorage.setItem(id, JSON.stringify(item));
 		alert("Milk bottle saved!");
 	}
 	
+		//Variable Defaults
+	var formtime = ["Random", "Morning", "Noon", "Night"],
+		milkvalue,
+		errMsg = $("errors");
+	;
+	makeCats();
+		
 	function getData() {
 		toggleControls("on")
 		if(localStorage.length === 0) {
-			alert("There are no bottles saved.");
+			alert("There are no bottles saved.  Default data was added.");
+			autoFillData();
 		}
 		var makeDiv = document.createElement("div");
 		makeDiv.setAttribute("id", "items");
@@ -92,6 +99,7 @@ window.addEventListener("DOMContentLoaded", function() {
 			var obj = JSON.parse(value);
 			var makeSubList = document.createElement("ul");
 			makeli.appendChild(makeSubList);
+			getImage(obj.timeofday[1], makeSubList);
 			for(var n in obj) {
 				var makeSubli = document.createElement("li");
 				makeSubList.appendChild(makeSubli);
@@ -101,7 +109,22 @@ window.addEventListener("DOMContentLoaded", function() {
 			}
 			makeItemLinks(localStorage.key(i), linksLi);		
 		}
-	} 
+	}
+	
+	function getImage(catName, makeSubList) {
+		var imageLi = document.createElement("li");
+		makeSubList.appendChild(imageLi);
+		var newImg = document.createElement("img");
+		var setSrc = newImg.setAttribute("src", "images/"+ catName +".png");
+		imageLi.appendChild("newImg");
+	}
+	
+	function autoFillData() {
+		for(var n in json) {
+			var id = Math.floor(Math.random()*41345678);
+			localStorage.setItem(id, JSON.stringify(json[n]));
+		}
+	}
 	
 	function makeItemLinks(key, linksLi) {
 		var editLink = document.createElement("a");
@@ -127,21 +150,19 @@ window.addEventListener("DOMContentLoaded", function() {
 	function editItem() {
 		var value = localStorage.getItem(this.key);
 		var item = JSON.parse(value);
-		
 		toggleControls("off");
-		
-		$("TimeofDay").value = item.timeofday[1];
-		$("Date").value = item.date[1];
-		$("Notes").value = item.notes[1];
-		//$("HowManyOunces").value = item.HowManyOunces[1];
-		var radios = document.forms[0].milkvalue;
+		var radios = document.forms[0].milk
 		for(var i = 0; i < radios.length; i++) {
-			if(radios[i].value == "Yes" && obj.milk[1] == "No") {
+			if(radios[i].value == "Yes" && obj.milk[1] == "Yes") {
 				radios[i].setAttribute("checked", "checked");
 			}else if(radios[i].value == "No" && obj.milk[1] == "No") {
 			radios[i].setAttribute("checked", "checked");
 			}
 		}
+		$("TimeofDay").value = item.timeofday[1];
+		$("Date").value = item.date[1];
+		$("Notes").value = item.notes[1];
+		$("HowManyOunces").value = item.ounces[1];
 		save.removeEventListener("click", storeData);
 		$("Submit").value = "Edit Bottle";
 		var editSubmit = $("Submit");
@@ -172,12 +193,24 @@ window.addEventListener("DOMContentLoaded", function() {
 	}
 	
 	function validate(e) {
-		var getNotes = $("Notes");
+		var getTimeofDay = $("TimeofDay");
+		var getDate = $("Date");
+		errMsg.innerHTML = "";
+			getTimeofDay.style.border = "3px dashed purple";
+			getDate.style.border = "3px solid red";
+			getDate.style.border = "3px solid red";
+			
 		var messageAry = [];
-		if(getNotes.value === 0) {
-			var notesError = "Please enter some notes about your baby";
-			getNotes.style.border = "3px dashed purple";
-			messageAry.push(notesError);
+		if(getTimeofDay.value === "Random") {
+			var timeofDayError = "Please enter the time of day you are feeding your baby";
+			getTimeofDay.style.border = "3px dashed purple";
+			messageAry.push(timeofDayError);
+		}
+		
+		if (getDate.value === "") {
+			var dateError = "Please enter the day you are feeding your baby";
+			getDate.style.border = "3px solid red";
+			messageArry.push(dateError);	
 		}
 		
 		if(messageAry.length >= 1) {
@@ -192,17 +225,12 @@ window.addEventListener("DOMContentLoaded", function() {
 			storeData(this.key);
 		}
 	}
-	
-	//Variable Defaults
-	var formtime = ["Morning", "Noon", "Night"];
-		makeCats();
-		errMsg = $("errors");
-	
+
 	var displayLink = $("displaylink");
 	displayLink.addEventListener("click", getData);
 	var clearLink = $("clear");
 	clearLink.addEventListener("click", clearLocal);
 	var save = $("Submit");
-	save.addEventListener("click", storeData);
+	save.addEventListener("click", storeData, validate);
 	
 });
