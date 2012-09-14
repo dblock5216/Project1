@@ -1,0 +1,633 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Mobile Site Template</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<Link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="jquery.ui.datepicker.mobile.css" /> 
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+	
+	<div data-role="page" id="home" style="background-image:url(images/miu1.png)">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+			<div data-role="navbar" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#bottles" data-icon="star" data-iconpos="bottom">Bottles</a></li>	
+					<li><a href="#typesofmilk" data-icon="star" data-iconpos="bottom">Formula</a></li>
+					<li><a href="#nipplesheet1" data-icon="star" data-iconpos="bottom">Nipples</a></li>
+					<li><a href="#stories" data-icon="star" data-iconpos="bottom">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		<div data-role="content">
+		
+			<div class="ui-grid-solo">
+				<div class="ui-block-a">
+					<a href="#newlog" data-role="button" type="v" data-icon="check" data-iconpos="bottom" data-theme="b">Add New Log</a>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+		
+	<div data-role="page" id="logs">
+		
+		<div data-role="header" data-position="fixed" data-id="mainnav">
+			<h1>Baby Bottle Log</h1>
+		<div data-role="navbar" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#bottles" data-icon="star" data-iconpos="bottom">Bottles</a></li>	
+					<li><a href="#typesofmilk" data-icon="star" data-iconpos="bottom">Formula</a></li>
+					<li><a href="#nipplesheet1" data-icon="star" data-iconpos="bottom">Nipples</a></li>
+					<li><a href="#stories" data-icon="star" data-iconpos="bottom">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+
+		<div data-role="content">		
+			<p>Log Information</p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="bottles">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+		<div data-role="navbar" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#bottles" data-icon="star" data-iconpos="bottom">Bottles</a></li>	
+					<li><a href="#typesofmilk" data-icon="star" data-iconpos="bottom">Formula</a></li>
+					<li><a href="#nipplesheet1" data-icon="star" data-iconpos="bottom">Nipples</a></li>
+					<li><a href="#stories" data-icon="star" data-iconpos="bottom">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		
+		<div data-role="content">		
+			<ul data-role="listview" data-inset="true">	
+				<li><a href="#standard">Standard</a></li>
+				<li><a href="#disposable">Disposable</a></li>
+				<li><a href="#breastfeeding">Breastfeeding</a></li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="typesofmilk">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+		<div data-role="navbar" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#bottles" data-icon="star" data-iconpos="bottom">Bottles</a></li>	
+					<li><a href="#typesofmilk" data-icon="star" data-iconpos="bottom">Formula</a></li>
+					<li><a href="#nipplesheet1" data-icon="star" data-iconpos="bottom">Nipples</a></li>
+					<li><a href="#stories" data-icon="star" data-iconpos="bottom">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		
+		<div data-role="content">		
+			<ul data-role="listview" data-filter="true">
+					
+				<li><a href="#similac"><img src="images/similac.jpg">Similac</a></li>
+				<li><a href="#enfamil"><img src="images/enfamil.jpg">Enfamil</a></li>
+				<li><a href="#goodstart"><img src="images/goodstart.jpg">Good Start</a></li>
+				<li><a href="#others">
+					<h3>Others</h3>
+					<p>(Soy-based, Cow's Milk, Hydrolysed-protein formula....)</p>
+				</a></li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="Nipples">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+		<div data-role="navbar" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#bottles" data-icon="star" data-iconpos="bottom">Bottles</a></li>	
+					<li><a href="#typesofmilk" data-icon="star" data-iconpos="bottom">Formula</a></li>
+					<li><a href="#nipplesheet1" data-icon="star" data-iconpos="bottom">Nipples</a></li>
+					<li><a href="#stories" data-icon="star" data-iconpos="bottom">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+
+		<div data-role="content">		
+			<p>Tips for Parents</p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="stories">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+			<div data-role="navbar" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#bottles" data-icon="star" data-iconpos="bottom">Bottles</a></li>	
+					<li><a href="#typesofmilk" data-icon="star" data-iconpos="bottom">Formula</a></li>
+					<li><a href="#nipplesheet1" data-icon="star" data-iconpos="bottom">Nipples</a></li>
+					<li><a href="#stories" data-icon="star" data-iconpos="bottom">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		
+		<div data-role="content">
+			<div>
+				<ul>
+					<h3>Assorted Stories to Fill Your Heart</h3>
+					<p> Below are various stories collected from Mom's everywhere who want to share their experiences raising their children.....ENJOY!!</p>
+				</ul>
+			</div>		
+			<div data-role="collapsible-set">
+				<div data-role="collapsible" data-collapsed="false">
+					<ul data-role="collapsible" data-collapsed="false">
+						<h3>Mom</h3>
+							<p>I was in the kitchen fixing lunch or dinner who remembers. At that point in my life it seems I was always in the kitchen. I was nearly time to fix a bottle for my youngest son who was about three months old. So I asked my three year old daughter to go to the back bedroom to check to see if he was awake. I was expecting her to yell back to me "YES" or "NO". I continued with my chores needing to get something out of the fridge.</p>
+							<p>When I closed the door there stood my daughter with her little brother in her arms. I was so startled that it scared my daughter and she began to cry. However my three month old could not have been happier.</p>
+							<p>Today I still do not know how she was able to get him out of his bassinet without tipping it over. My daughter has always looked after both her brothers ever since. When they go to their grand parents house to visit she is the one who packs all their clothes and makes sure that everything and everyone comes home safely. </p>
+					</ul>
+						
+					<ul data-role="collapsible" data-collapsed="false">
+						<h3>Baby</h3>
+							<p>My first baby boy, Ben. Ahh, Ben. I had never been so in love. He was truly the most beautiful, most perfect baby in the world. The way he looked, smelled, and felt were like nothing I'd ever experienced. He was a little blond baby who looked like he had a halo over his head. He was a bit colicky, though, and I was so exhausted. More to the point, I was practically psychotic from lack of sleep.</p>
+							<p>Ben was the typical baby, waking up several times each night crying. Although my husband helped, I got up most of the time. By the fourth week, I thought I would lose my mind. My beautiful, wondrous baby had sapped me of all energy, vision, and personality. I could barely move.</p>
+							<p>One memorable night at around 3am, he woke me...for about the third time that night. I awoke in a stupor in response to his cry. I went through the motions: feeding him, holding him, comforting him. Then I went to change him as usual. I was so tired and my body was throbbing in a deep ache. I just needed to change him and go back to bed.</p>
+							<p>Just as I took off his dirty diaper (drum roll, please...) - he pooped. Let me explain. This was not a standard variety poop. It was projectile. It was atomic. It was everywhere. All over him, all over me, all over everything. I was so stunned I couldn't even react. I wanted to cry, but I didn't have the energy. I cleaned and changed him in silence, threw out my nightgown, rolled back into bed, and prayed for a few hours of dreamless sleep.</p>
+							<p>I awoke the next morning with a smile on my face, eager to tell my husband the story. The turnaround in my perspective was stunning. THIS was true love!!</p> 
+					</ul>		
+				</div>
+			</div>	
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="standard">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+			<div data-role="navbar" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#bottles" data-icon="star" data-iconpos="bottom">Bottles</a></li>	
+					<li><a href="#typesofmilk" data-icon="star" data-iconpos="bottom">Formula</a></li>
+					<li><a href="#nipplesheet1" data-icon="star" data-iconpos="bottom">Nipples</a></li>
+					<li><a href="#stories" data-icon="star" data-iconpos="bottom">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		<div data-role="content" data-inset="true">
+			<ul data-role="listview">
+			<li data-role="list-divider">Standard</li>
+			</ul>
+			<p>Standard bottles are straight, and some are wider than others. The wider styles are more stable and a bit easier to pump into if you are breastfeeding. Each standard bottle is marked in ounces, and many feature an anti-vacuum function that reduces incidents of colic, gas, or discomfort.</p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="disposable">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+			<div data-role="navbar" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#bottles" data-icon="star" data-iconpos="bottom">Bottles</a></li>	
+					<li><a href="#typesofmilk" data-icon="star" data-iconpos="bottom">Formula</a></li>
+					<li><a href="#nipplesheet1" data-icon="star" data-iconpos="bottom">Nipples</a></li>
+					<li><a href="#stories" data-icon="star" data-iconpos="bottom">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		<div data-role="content" data-inset="true">
+			<ul data-role="listview">
+			<li data-role="list-divider">Disposable</li>
+			</ul>
+			<p>Disposable bottles, or nursers, use a liner that is placed into a bottle holder so that a nipple can be attached. The airtight and flexible liners contract during feeding, reducing air ingestion and helping to prevent gas. After baby is done feeding, the liner is tossed away. Disposables are convenient when you're on the go, and a good choice for babies with painful gas.</p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="breastfeeding">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+			<div data-role="navbar" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#bottles" data-icon="star" data-iconpos="bottom">Bottles</a></li>	
+					<li><a href="#typesofmilk" data-icon="star" data-iconpos="bottom">Formula</a></li>
+					<li><a href="#nipplesheet1" data-icon="star" data-iconpos="bottom">Nipples</a></li>
+					<li><a href="#stories" data-icon="star" data-iconpos="bottom">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		<div data-role="content" data-inset="true">
+			<ul data-role="listview">
+			<li data-role="list-divider">Breastfeeding</li>
+			</ul>
+			<p>Breastfeeding is the feeding of an infant or young child with breast milk directly from female human breasts (i.e., via lactation) rather than from a baby bottle or other container. Babies have a sucking reflex that enables them to suck and swallow milk. It is recommended that mothers breastfeed for six months or more, without the addition of infant formula or solid food.</p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="similac">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+			<div data-role="navbar" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#bottles" data-icon="star" data-iconpos="bottom">Bottles</a></li>	
+					<li><a href="#typesofmilk" data-icon="star" data-iconpos="bottom">Formula</a></li>
+					<li><a href="#nipplesheet1" data-icon="star" data-iconpos="bottom">Nipples</a></li>
+					<li><a href="#stories" data-icon="star" data-iconpos="bottom">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li data-role="list-divider">Similac</li>
+				<li><h3><a href="https://similac.com/">https://similac.com/</a></h3><li>
+				<li>Similac® baby formulas are designed to be more like breast milk and help support your baby's developing immune system. And Similac baby formulas with EarlyShield have immune-supporting nucleotides — and prebiotics and carotenoids, nutrients naturally found in breast milk. In addition to having DHA/ARA, Similac has Lutein, an important nutrient babies can get from breast milk and Similac. It's especially helpful now, during this critical time of your baby's brain and eye development.</li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="enfamil">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+			<div data-role="navbar" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#bottles" data-icon="star" data-iconpos="bottom">Bottles</a></li>	
+					<li><a href="#typesofmilk" data-icon="star" data-iconpos="bottom">Formula</a></li>
+					<li><a href="#nipplesheet1" data-icon="star" data-iconpos="bottom">Nipples</a></li>
+					<li><a href="#stories" data-icon="star" data-iconpos="bottom">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li data-role="list-divider">Enfamil</li>
+				<li><h3><a href="https://enfamil.com/">https://enfamil.com/</a></h3><li>
+				<li>Aimed to be one of the world's leading providers of pediatric nutrition and pharmaceutical products, Enfamil is part of a family that has almost a 100-year history of innovation in baby nutrition products. Mead Johnson Nutritionals, the parent company was founded by Edward Mead Johnson in 1905, after leaving Johnson & Johnson to focus on his new venture.</li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="goodstart">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+			<div data-role="navbar" data-icon="star" data-iconpos="bottom" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions">Logs</a></li>	
+					<li><a href="#bottles">Bottles</a></li>	
+					<li><a href="#typesofmilk">Formula</a></li>
+					<li><a href="#nipplesheet1">Nipples</a></li>
+					<li><a href="#stories">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li data-role="list-divider">Gerber</li>
+				<li><h3><a href="https://gerber.com/">https://gerber.com/</a></h3><li>
+				<li>Good Start milk-based formulas have levels of DHA & ARA that are recommended by experts and similar to levels shown in studies to support babies’ brain and eye development. </li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="others">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+			<div data-role="navbar" data-icon="star" data-iconpos="bottom" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions">Logs</a></li>	
+					<li><a href="#bottles">Bottles</a></li>	
+					<li><a href="#typesofmilk">Formula</a></li>
+					<li><a href="#nipplesheet1">Nipples</a></li>
+					<li><a href="#stories">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li><a href="#soybased">Soy-Based</a></li>
+				<li><a href="#cowmilk">Cow's Milk</a></li>
+				<li><a href="#hp">Hydrolysed-protein</a></li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="soybased">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+			<div data-role="navbar" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#bottles" data-icon="star" data-iconpos="bottom">Bottles</a></li>	
+					<li><a href="#typesofmilk" data-icon="star" data-iconpos="bottom">Formula</a></li>
+					<li><a href="#nipplesheet1" data-icon="star" data-iconpos="bottom">Nipples</a></li>
+					<li><a href="#stories" data-icon="star" data-iconpos="bottom">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		<div data-role="content">
+			<ul data-role="listview"> 
+				<li data-role="list-divider">Soy</li>
+			</ul>
+			<p> Soy-based formulas can be useful if you want to exclude animal proteins from your child's diet. Soy-based infant formulas might also be an option for babies who are intolerant or allergic to cow's milk formula or to lactose, a sugar naturally found in cow's milk. However, babies who are allergic to cow's milk might also be allergic to soy milk.</p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="cowmilk">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+			<div data-role="navbar" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#bottles" data-icon="star" data-iconpos="bottom">Bottles</a></li>	
+					<li><a href="#typesofmilk" data-icon="star" data-iconpos="bottom">Formula</a></li>
+					<li><a href="#nipplesheet1" data-icon="star" data-iconpos="bottom">Nipples</a></li>
+					<li><a href="#stories" data-icon="star" data-iconpos="bottom">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		<div data-role="content">
+			<ul data-role="listview"> 
+				<li data-role="list-divider">Cow's Milk</li>
+			</ul>
+			<p>Most infant formula is made with cow's milk that's been altered to resemble breast milk. This gives the formula the right balance of nutrients — and makes the formula easier to digest. Most babies do well on cow's milk formula. Some babies, however — such as those allergic to the proteins in cow's milk — need other types of infant formula.</p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="hp">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+			<div data-role="navbar" data-icon="star" data-iconpos="bottom" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#bottles" data-icon="star" data-iconpos="bottom">Bottles</a></li>	
+					<li><a href="#typesofmilk" data-icon="star" data-iconpos="bottom">Formula</a></li>
+					<li><a href="#nipplesheet1" data-icon="star" data-iconpos="bottom">Nipples</a></li>
+					<li><a href="#stories" data-icon="star" data-iconpos="bottom">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		<div data-role="content">
+			<ul data-role="listview"> 
+				<li data-role="list-divider">Hydrolysed-protein formula</li>
+			</ul>
+			<p> These types of formulas contain protein that's been broken down (hydrolyzed) — partially or extensively — into smaller sizes than are those in cow's milk and soy-based formulas. Protein hydrolysate formulas are meant for babies who don't tolerate cow's milk or soy-based formulas. Extensively hydrolyzed formulas can also be given to babies who have a protein allergy. </p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="newlog">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+			<div data-role="navbar" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#bottles" data-icon="star" data-iconpos="bottom">Bottles</a></li>	
+					<li><a href="#typesofmilk" data-icon="star" data-iconpos="bottom">Formula</a></li>
+					<li><a href="#nipplesheet1" data-icon="star" data-iconpos="bottom">Nipples</a></li>
+					<li><a href="#stories" data-icon="star" data-iconpos="bottom">Stories</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		<div data-role="content">
+		
+			<form action="" methods="post" id="newbottleform" data-theme="a">
+				
+				<div data-role="fieldcontain">
+					<label for="babyname">Baby's Name:</label>
+					<input type="text" name="babyname" id="babyname" value="what do you call your child?" class="required">
+				</div>
+				
+				<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup" data-type="horizontal" id="babysex">
+						<legend>Baby's Sex:<h6> (Is Your Angel a Boy or a Girl?)</h6></legend>
+						<input type="radio" value="Male" name="babysex" id="babysexmale">
+						<label for="babysexmale">Male</label>
+						<input type="radio" value="Female" name="babysex" id="babysexfemale">
+						<label for="babysexfemale">Female</label>		
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="date">What's the Date?</label>
+					<input type="date" name="date" id="date" value="" class="required"  />	
+				</div>
+				
+				<div data-role="fieldcontain">	
+					<label for="babylbs">How Many lbs Does Your Baby Weigh?</label>
+					<input type="range" name="babylbs" id="babylbs" min="0 lbs" max="30lbs">
+				</div>
+					
+				<div data-role="fieldcontain">	
+					<label for="milkounces">How Many Ounces?</label>
+					<input type="range" name="milkounces" id="milkounces" value="8" min="0" max="16">
+						<select data-role="slider">
+							<option value="off">Formula</option>
+							<option value="on">Breast</option>
+						</select
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="notes">Notes:</label>
+					<textarea cols="40" rows="8" name="notes" id="notes" value="Is your baby sick?, Teething?,......"></textarea>
+				</div>
+				
+				<fieldset class="ui-grid-a">
+					<div class="ui-block-a"><a href="#logview" type="reset" data-theme="a">Clear</a></div>
+					<div class="ui-block-b"><a href="#newlog" type="button" data-theme="a">Dont' Save</a></div>	   
+				</fieldset>
+				
+				<label for="savebutton"></label>
+				<input type="submit" value="Save" id="savebutton" data-theme="e"/>
+
+							
+			</form>
+			
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="nipplesheet1">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Baby Bottle Log</h1>
+			<div data-role="navbar" data-icon="star" data-iconpos="bottom" data-id="mainnav">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#bottles" data-icon="star" data-iconpos="bottom">Bottles</a></li>	
+					<li><a href="#typesofmilk" data-icon="star" data-iconpos="bottom">Formula</a></li>
+					<li><a href="#nipplesheet1" data-icon="star" data-iconpos="bottom">Nipples</a></li>
+					<li><a href="#stories" data-icon="star" data-iconpos="bottom">Stories</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div data-role="content">
+			<div data-role="collapsible-set">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>Sizes</h3>
+						<ul data-role="collapsible" data-collapsed="false" data-theme="a">
+							<h3>One</h3>
+								<li>Size one nipples are for babies from birth to age 6 months and have a small hole.</li>
+						</ul>
+					
+						<ul data-role="collapsible" data-collapsed="false" data-theme="a">
+							<h3>Two</h3>
+								<li>Size two nipples have a larger hole and are for older babies.</li>
+						</ul>
+					
+						<ul data-role="collapsible" data-collapsed="false" data-theme="a">
+							<h3>Fast Flow Nipple</h3>
+								<li>hole becomes significantly increased as baby is able to take in fluids faster</li>
+						</ul>	
+				</div>
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>Shapes</h3>
+						<ul data-role="collapsible" data-collapsed="false" data-theme="a">
+							<h3>Standard</h3>
+								<li>Standard nipples are tall and dome-shaped.</li>
+						</ul>
+					
+						<ul data-role="collapsible" data-collapsed="false" data-theme="a">
+							<h3>Orthodontic</h3>
+								<li>Orthodontic nipples are shaped to fit the inside of your baby's mouth — wide at the tip and base, and narrow in the middle.</li>
+						</ul>
+					
+						<ul data-role="collapsible" data-collapsed="false" data-theme="a">
+							<h3>Other</h3>
+								<li>Other nipple types mimic the shape of your breast.</li>
+						</ul>
+				</div>		
+				<div data-role="collapsible" data-collapsed="false" >
+					<h3>Materials</h3>
+						<ul data-role="collapsible" data-collapsed="false" data-theme="a">
+							<h3>Latex</h3>
+								<li>softer and can hold the odor of the milk, and tends to wear out more quickly.</li>
+						</ul>
+						<ul data-role="collapsible" data-cllapsed="false" data-theme="a">
+							<h3>Silicone</h3>
+								<li>sturdier and easier to clean, but is not as soft as latex. However, silicone nipples last up to a year.</li>
+						</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>Cleaning</h3>
+					<p>Wash them after every feeding, and check the bottle nipples for wear and tear.</p>
+					<p>Be sure to replace nipples as your baby grows and needs a larger size, and always replace any bottle nipple that shows signs of wear.</p>	
+				</div>
+			</div	
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+		
+	<!-- JavaScript under here -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<script type="text/javascript" src="jQuery.ui.datepicker.js"></script>
+  	<script type="text/javascript" src="jquery.ui.datepicker.mobile.js"></script>
+  	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+  	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
