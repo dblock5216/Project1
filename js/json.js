@@ -12,6 +12,7 @@ var json = {
 		"ounces": ["Ounces of Milk: ", "12"],
 		"milk": ["Is It Breastmilk?: ", "No"],
 		"notes": ["Notes: ", "Baby only drank half bottle."]
+<<<<<<< HEAD
 	},
 	"bottle1": {
 		"timeofday": ["Time of Day: ", "Morning"],
@@ -96,5 +97,7 @@ var json = {
 		"ounces": ["Ounces of Milk: ", "8"],
 		"milk": ["Is It Breastmilk?: ", "Yes"],
 		"notes": ["Notes: ", "None"]
+=======
+>>>>>>> 5ef076dae8ca551eb97479005ce0436fec2ac377
 	}
 }
