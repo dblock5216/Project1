@@ -1,0 +1,256 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Mobile Site Template</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<Link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="jquery.ui.datepicker.mobile.css" /> 
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+	
+	<div data-role="page" id="home" data-theme="e">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Cigarette Quit</h1>
+			<div data-role="navbar" data-id="mainnav" data-theme="c">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#quitinfo" data-icon="star" data-iconpos="bottom">Why Quit?</a></li>	
+					<li><a href="#brands" data-icon="star" data-iconpos="bottom">Brands</a></li>
+					<li><a href="#warnings" data-icon="star" data-iconpos="bottom">Proven Facts</a></li>
+					<li><a href="#about" data-icon="star" data-iconpos="bottom">About</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		<div data-role="content">
+		
+			<div class="ui-grid-solo">
+				<div class="ui-block-a">
+					<a href="#newlog" data-role="button" type="v" data-icon="check" data-iconpos="bottom" data-theme="b">Add New Log</a>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+		
+	<div data-role="page" id="logs" data-theme="e">
+		
+		<div data-role="header" data-position="fixed" data-id="mainnav">
+			<h1>Cigarette Quit</h1>
+		<div data-role="navbar" data-id="mainnav" data-theme="c">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#quitinfo" data-icon="star" data-iconpos="bottom">Why Quit</a></li>	
+					<li><a href="#brands" data-icon="star" data-iconpos="bottom">Brands</a></li>
+					<li><a href="#warnings" data-icon="star" data-iconpos="bottom">Proven Facts</a></li>
+					<li><a href="#about" data-icon="star" data-iconpos="bottom">About</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+
+		<div data-role="content">		
+			<p>Log Information</p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="quitinfo" data-theme="e">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Cigarette Quit</h1>
+		<div data-role="navbar" data-id="mainnav" data-theme="c">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#quitinfo" data-icon="star" data-iconpos="bottom">Why Quit</a></li>
+					<li><a href="#brands" data-icon="star" data-iconpos="bottom">Brands</a></li>
+					<li><a href="#warnings" data-icon="star" data-iconpos="bottom">Proven Facts</a></li>
+					<li><a href="#about" data-icon="star" data-iconpos="bottom">About</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		
+		<div data-role="content">		
+			<ul>	
+				<p>If you use tobacco, there are compelling reasons for you to quit. The rewards of quitting are tremendous, and they begin immediately. You’ll experience the benefits of not using tobacco within 20 minutes of quitting, and as your tobacco-free days accumulate, the benefits will accumulate, too. Quitting tobacco will improve your health, your finances, your self-esteem and your everyday life – immediately and over the long term – in ways you may never have imagined.</p>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="brands" data-theme="e">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Cigarette Quit</h1>
+		<div data-role="navbar" data-id="mainnav" data-theme="c">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#quitinfo" data-icon="star" data-iconpos="bottom">Why Quit</a></li>	
+					<li><a href="#brands" data-icon="star" data-iconpos="bottom">Brands</a></li>
+					<li><a href="#warnings" data-icon="star" data-iconpos="bottom">Proven Facts</a></li>
+					<li><a href="#about" data-icon="star" data-iconpos="bottom">About</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		
+		<div data-role="content">		
+			<div class="ui-grid-c">
+				<div class="ui-block-a">
+					<img src="images/pic1.jpg" />
+				</div>
+				<div class="ui-block-b">
+					<img src="images/pic2.jpg" />
+				</div>
+				<div class="ui-block-c">
+					<img src="images/pic3.jpg" />
+				</div>
+				<div class="ui-block-d">
+					<img src="images/pic4.jpg" />
+				</div>
+				<div class="ui-block-a">
+					<img src="images/pic9.jpg" />
+				</div>
+				<div class="ui-block-b">
+					<img src="images/pic6.jpg" />
+				</div>
+				<div class="ui-block-c">
+					<img src="images/pic7.jpg" />
+				</div>
+				<div class="ui-block-d">
+					<img src="images/pic8.jpg" />
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="about" data-theme="e">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Cigarette Quit</h1>
+			<div data-role="navbar" data-id="mainnav" data-theme="c">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#quitinfo" data-icon="star" data-iconpos="bottom">Why Quit</a></li>
+					<li><a href="#brands" data-icon="star" data-iconpos="bottom">Brands</a></li>
+					<li><a href="#warnings" data-icon="star" data-iconpos="bottom">Proven Facts</a></li>
+					<li><a href="#about" data-icon="star" data-iconpos="bottom">About</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		
+		<div data-role="content">
+			<div>
+				<ul>
+					<h3>Catch Me on Github</h3>
+					<p><a href="https://github.com/dblock5216/Project1.git">https://github.com/dblock5216/Project1.git</a></p>
+				</ul>
+			</div>		
+			<p>Cigarette Quit is a free application aimed at helping the average user quit smoking by providing a variety of facts and reasons to motivate smokers to quit</p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="#home">Home</a></h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="warnings" data-theme="e">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Cigarette Quit</h1>
+			<div data-role="navbar" data-icon="star" data-iconpos="bottom" data-id="mainnav" data-theme="c">
+				<ul>
+					<li><a href="#logoptions" data-icon="star" data-iconpos="bottom">Logs</a></li>	
+					<li><a href="#quitinfo" data-icon="star" data-iconpos="bottom">Why Quit</a></li>	
+					<li><a href="#brands" data-icon="star" data-iconpos="bottom">Brands</a></li>
+					<li><a href="#warnings" data-icon="star" data-iconpos="bottom">Proven Facts</a></li>
+					<li><a href="#about" data-icon="star" data-iconpos="bottom">About</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div data-role="content">
+			<div data-role="collapsible-set">
+				<div data-role="collapsible" data-collapsed="false" data-theme="b">
+					<h3>Health</h3>
+						<ul data-role="collapsible" data-collapsed="false" data-theme="a">
+								<p>Cigarettes contain arsenic, formaldehyde, lead, hydrogen cyanide, nitrogen oxide, carbon monoxide, ammonia and 43 known carcinogens.</p>
+						</ul>
+					
+						<ul data-role="collapsible" data-collapsed="false" data-theme="a">
+								<p> Urea, a chemical compound that is a major component in urine, is used to add “flavor” to cigarettes.</p>
+						</ul>
+					
+						<ul data-role="collapsible" data-collapsed="false" data-theme="a">
+								<p>Sugar approximates to roughly 20% of a cigarette, and many diabetics are unaware of this secret sugar intake. Also, the effect of burning sugar is unknown.</p>
+						</ul>	
+				</div>
+				<div data-role="collapsible" data-collapsed="false" data-theme="b">
+					<h3>Business</h3>
+						<ul data-role="collapsible" data-collapsed="false" data-theme="a">
+								<p>Cigarettes are the single-most traded item on the planet, with approximately 1 trillion being sold from country to country each year. At a global take of more than $400 billion, it’s one of the world’s largest industries.</p>
+						</ul>
+					
+						<ul data-role="collapsible" data-collapsed="false" data-theme="a">
+								<p>The American brands Marlboro, Kool, Camel and Kent own roughly 70% of the global cigarette market.</p>
+						</ul>
+					
+						<ul data-role="collapsible" data-collapsed="false" data-theme="a">
+								<p>About 10 million cigarettes are sold every minute in the world.</p>
+						</ul>
+				</div>		
+				<div data-role="collapsible" data-collapsed="false" data-theme="b" >
+					<h3>Deaths</h3>
+						<ul data-role="collapsible" data-collapsed="false" data-theme="a">
+								<p>Tobacco use accounts for at least 30% of all cancer deaths and 80% of lung cancer deaths.</p>
+						</ul>
+						
+						<ul data-role="collapsible" data-cllapsed="false" data-theme="a">
+								<p>Each year, about 3,400 non-smoking adults die of lung cancer as a result of breathing secondhand smoke.</p>
+						</ul>
+						
+						<ul data-role="collapsible" data-cllapsed="false" data-theme="a">
+								<p>Lung cancer is the leading cause of cancer death in the United States for both men and women.</p>
+						</ul>
+				</div>
+			</div	
+		
+			<div data-role="footer" data-position="fixed">
+				<h4><a href="#home">Home</a></h4>
+			</div>
+	</div>
+		
+	<!-- JavaScript under here -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/*
+Title: Activity 2 VFW CSS sheet
+by: Dorian Lane
+VFW 0812
+August 2012
+
+*/
+
+body {
+	text-align:justify;
+	text-transform: capitalize;
+	margin: 0px; padding: 0px; 
+
+} 
+
+
+h1{
+	margin: 10px 20px;
+	border: 5px outset purple;
+	background: none;
+	outline: none;
+	color: blue;
+	font-style:  bolder;
+	font-family: "Times New Roman";
+	font-size: 22px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	overflow: ;
+	visibility: ;
+}
+
+form{
+	margin: 0px;
+	padding: 0px;
+	color: black;
+	border: 4px inset gold;
+	font-style: italic;
+	font-family: "Arial";
+	font-weight: normal;
+	font-size: 15px;
+
+}
+
+fieldset{
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.1em;
+	border: none;
+	letter-spacing: .03em; 
+	text-indent: 5px;	
+	text-decoration: none;
+	font-weight: lighter;
+
+}
+
+legend{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Times";
+	color: red;
+	border: none;
+	
+}
+
+form{
+	font-family: "Arial";
+	color: "blue";
+
+}
+
+}
+
+ol{
+	margin: -10px 0px 0px 0px;
+}
+
+li { 
+	margin-top: 1em; 
+	
+}
+
+#Submit{
+	color: red;
+
+}
+
+
+a:hover{color:red;outline: none;}
+
+
+
